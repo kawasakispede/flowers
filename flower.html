@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flowers For You ❤️</title>
+
+<style>
+    body {
+        background: #ffe8f4;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 30px;
+        color: #b00055;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+    .flowers {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    /* ---------------- FLOWER 1 — Pink Lotus ---------------- */
+    .flower1 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        animation: slowspin 18s linear infinite;
+    }
+
+    @keyframes slowspin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .lotus {
+        position: absolute;
+        width: 130px;
+        height: 150px;
+        background: radial-gradient(circle at 50% 40%, #ffb3e6, #ff4dc4);
+        border-radius: 100px 100px 0 0;
+        top: 30px;
+        left: 35px;
+        transform-origin: bottom center;
+    }
+
+    .lotus:nth-child(1)  { transform: rotate(0deg); }
+    .lotus:nth-child(2)  { transform: rotate(45deg); }
+    .lotus:nth-child(3)  { transform: rotate(90deg); }
+    .lotus:nth-child(4)  { transform: rotate(135deg); }
+    .lotus:nth-child(5)  { transform: rotate(180deg); }
+    .lotus:nth-child(6)  { transform: rotate(225deg); }
+    .lotus:nth-child(7)  { transform: rotate(270deg); }
+    .lotus:nth-child(8)  { transform: rotate(315deg); }
+
+    .center1 {
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle, #fffaa0, #ffd000);
+        border-radius: 50%;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        box-shadow: 0 0 20px #ffe066;
+    }
+
+
+    /* ---------------- FLOWER 2 — Yellow Sunflower ---------------- */
+    .flower2 {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        animation: pulsing 3s ease-in-out infinite;
+    }
+
+    @keyframes pulsing {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.07); }
+    }
+
+    .petal2 {
+        position: absolute;
+        width: 50px;
+        height: 130px;
+        background: radial-gradient(circle at 50% 20%, #ffef79, #ffcc00 80%);
+        border-radius: 60px 60px 0 0;
+        left: 85px;
+        top: 20px;
+        transform-origin: bottom center;
+    }
+
+    .petal2:nth-child(1)  { transform: rotate(0deg); }
+    .petal2:nth-child(2)  { transform: rotate(30deg); }
+    .petal2:nth-child(3)  { transform: rotate(60deg); }
+    .petal2:nth-child(4)  { transform: rotate(90deg); }
+    .petal2:nth-child(5)  { transform: rotate(120deg); }
+    .petal2:nth-child(6)  { transform: rotate(150deg); }
+    .petal2:nth-child(7)  { transform: rotate(180deg); }
+    .petal2:nth-child(8)  { transform: rotate(210deg); }
+    .petal2:nth-child(9)  { transform: rotate(240deg); }
+    .petal2:nth-child(10) { transform: rotate(270deg); }
+    .petal2:nth-child(11) { transform: rotate(300deg); }
+    .petal2:nth-child(12) { transform: rotate(330deg); }
+
+    .center2 {
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, #5a3e1a, #2b1907);
+        border-radius: 50%;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        box-shadow: inset 0 0 25px #000;
+    }
+
+
+    /* ---------------- FLOWER 3 — Blue Fantasy Flower ---------------- */
+    .flower3 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        animation: glow 5s infinite alternate ease-in-out;
+    }
+
+    @keyframes glow {
+        from { filter: drop-shadow(0 0 10px #a0caff); }
+        to { filter: drop-shadow(0 0 25px #70a6ff); }
+    }
+
+    .petal3 {
+        position: absolute;
+        width: 110px;
+        height: 160px;
+        background: radial-gradient(circle at 50% 30%, #a8d4ff, #5aa0ff 70%, #0059c9);
+        border-radius: 100px 100px 0 0;
+        top: 25px;
+        left: 45px;
+        transform-origin: bottom center;
+    }
+
+    .petal3:nth-child(1)  { transform: rotate(0deg); }
+    .petal3:nth-child(2)  { transform: rotate(60deg); }
+    .petal3:nth-child(3)  { transform: rotate(120deg); }
+    .petal3:nth-child(4)  { transform: rotate(180deg); }
+    .petal3:nth-child(5)  { transform: rotate(240deg); }
+    .petal3:nth-child(6)  { transform: rotate(300deg); }
+
+    .center3 {
+        width: 90px;
+        height: 90px;
+        background: radial-gradient(circle, #ffffff, #bcdcff);
+        border-radius: 50%;
+        position: absolute;
+        top: 65px;
+        left: 55px;
+        box-shadow: 0 0 20px #9ac8ff;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>💐 For My Love 💐</h1>
+<p>
+    I made these flowers just for you.  
+    Each one is different — just like all the little ways you brighten my life.  
+    I hope they make you smile. ❤️
+</p>
+
+<div class="flowers">
+
+    <!-- Flower 1: Pink Lotus -->
+    <div class="flower1">
+        <div class="lotus"></div><div class="lotus"></div><div class="lotus"></div><div class="lotus"></div>
+        <div class="lotus"></div><div class="lotus"></div><div class="lotus"></div><div class="lotus"></div>
+        <div class="center1"></div>
+    </div>
+
+    <!-- Flower 2: Sunflower -->
+    <div class="flower2">
+        <div class="petal2"></div><div class="petal2"></div><div class="petal2"></div><div class="petal2"></div>
+        <div class="petal2"></div><div class="petal2"></div><div class="petal2"></div><div class="petal2"></div>
+        <div class="petal2"></div><div class="petal2"></div><div class="petal2"></div><div class="petal2"></div>
+        <div class="center2"></div>
+    </div>
+
+    <!-- Flower 3: Blue Fantasy Flower -->
+    <div class="flower3">
+        <div class="petal3"></div><div class="petal3"></div><div class="petal3"></div>
+        <div class="petal3"></div><div class="petal3"></div><div class="petal3"></div>
+        <div class="center3"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
